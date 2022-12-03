@@ -10,11 +10,7 @@ html {
     --logo-text-color:#2196F3;
     --desc-color:#757575;
 }
-/* *:hover, :focus {
-    transition-property: transform;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-} */
+
 body {
     margin: 0;
     font-family: Roboto , sans-serif;
@@ -651,6 +647,7 @@ background-color: #F5F4FA;
 }
 .addres-page {
     font-style: normal;
+    width: 231px;
 }
 .address {
     
@@ -740,6 +737,90 @@ background-color: #F5F4FA;
 
 
 
+
+/* mailing */
+.mailing {
+    display: block;
+    width: 570px;
+    margin-left: 93px;
+}
+
+.mailing-txt {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    margin-bottom: 20px;
+}
+
+.mailing-input {
+    padding: 15px 16px;
+    width: 358px;
+    
+
+    color: var(--hero-text-color);
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: #2F303A;
+
+    transition: transform, 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mailing-div {
+    display: flex;
+}
+
+ 
+.mailing-input:not(:placeholder-shown) {
+    border-color: #188CE8;
+    transition: transform, 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mailing-button {
+    display: inline-flex;
+    width: 200px;
+    height: 50px;
+    padding: 10px 28px;
+    margin-left: 12px;
+    
+
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border-color: #2196F3;
+
+    transition: transform, 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mailing-svg {
+    margin-left: 10px;
+}
+
+.mailing-button:hover,
+.mailing-button:focus {
+    color: var(--hero-text-color);
+    background-color: #188CE8;
+    transition: transform, 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+
+
+
+
+
 /* modal */
 .backdrop {
     position: fixed;
@@ -759,6 +840,7 @@ background-color: #F5F4FA;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding: 40px;
 
     width: 528px;
     height: 581px;
@@ -783,6 +865,8 @@ background-color: #F5F4FA;
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
+
+    transition: transform, 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .data-modal-buton-icon {
     width: 11px;
@@ -790,4 +874,177 @@ background-color: #F5F4FA;
     display: block;
     align-items: center;
     justify-content: center;
+}
+.data-modal-buton:hover {
+    fill: #188CE8;
+
+    transition: transform, 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-txt {
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+    margin-bottom: 12px;
+}
+
+
+/* form */
+.user-txt {
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.166;
+
+    letter-spacing: 0.01em;
+
+    color: #757575;
+    margin-bottom: 4px;
+}
+
+.user-input {
+
+    display: block;
+    width: 448px;
+    padding: 11px 30px;
+    
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+
+.input-div {
+    display: block;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.user-svg {
+    position: absolute;
+    bottom: 11px;
+    left: 12px;
+}
+
+.user-coment {
+    display: block;
+    width: 448px;
+    height: 120px;
+    padding: 12px 16px;
+    
+
+    resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2); 
+    border-radius: 4px;
+
+    margin-bottom: 20px;
+}
+.user-coment[placeholder="Введіть текст"] {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.166;
+    letter-spacing: 0.01em;
+    color: var(--title-text-color);
+
+    /* color: rgba(117, 117, 117, 0.5); */
+}
+
+/* check */
+
+.checkbox-div {
+    position: relative;
+justify-content: center;
+    display: inline-flex;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 425px;
+    
+}
+.checkbox-input {
+    -webkit-appearance: none;
+   -moz-appearance: none;
+        appearance: none;
+}
+
+.checkbox-txt {
+    margin-left: 30px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+
+    letter-spacing: 0.03em;
+
+    color: rgba(117, 117, 117, 1);
+}
+
+.checkbox-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration: underline;
+
+    letter-spacing: 0.03em;
+    color: rgba(33, 150, 243, 1);
+}
+
+.checkbox-custom {
+    position: absolute;
+    top: 5px;
+    left: 9px;
+    width: 16px;
+    height: 15px;
+
+    border: 2px solid  #212121;
+    border-radius: 2px;
+    transition: transform, 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.checkbox-input:checked +.checkbox-custom {
+    background-color: var(--logo-text-color);
+    background-origin: border-box;
+    border-color: var(--logo-text-color);
+    transition: transform, 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.user-input:not(:placeholder-shown), .user-input:not(:placeholder-shown) + .user-svg {
+    border-color: #188CE8;
+    fill: var(--logo-text-color);
+    transition: transform, 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+    
+.user-coment:not(:placeholder-shown) {
+    border-color: #188CE8;
+    transition: transform, 250ms cubic-bezier(0.4, 0, 0.2, 1);
+} 
+
+.button-send {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 50px;
+    
+    padding: 10px 52px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    color: #FFFFFF;
+
+    background: #2196F3;
+    
+    border-radius: 4px;
+    border-color: var(--logo-text-color);
+
+    transition: transform, 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-send:hover,
+.button-send:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: transform, 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
